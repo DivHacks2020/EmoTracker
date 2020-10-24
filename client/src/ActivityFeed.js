@@ -23,7 +23,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 export default function ActivityFeed() {
   return (
     <React.Fragment>
-      <NavBar />
       <TabContainer defaultActiveKey="first">
         <Row>
           <Col>
@@ -70,33 +69,4 @@ export default function ActivityFeed() {
       </TabContainer>
     </React.Fragment>
   );
-}
-
-function NavBar(){
-  return(
-    <React.Fragment>
-      <Container fluid className="justify-content-start">
-        <Row>  
-          <Col><div class="main-font" style={{backgroundColor: "black", color: "white", padding: "15px", textAlign: "center", width: "10vw"}}>Project Name.</div>
-          </Col>
-          </Row>
-          <Row style={{marginTop: "15px"}}>
-          <Col>
-            <div style={{width: "15vw"}}></div>
-            <div class="main-font link">Activity Feed</div>
-          </Col>
-          <Col>
-            <div class="main-font link">Mood Locator</div>
-          </Col>
-          <Col>
-            <div class="main-font link">Search Poster</div>
-          </Col>
-          <Col>
-            <div class="main-font link">Poster Data</div>
-          </Col>  
-        </Row>
-      </Container>
-      <div style={{width: "100vw", height: "5px", backgroundColor: "black", marginTop: "25px", marginBottom: "25px"}}></div>
-    </React.Fragment>
-  )
 }

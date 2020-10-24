@@ -2,11 +2,15 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 export default function Main() {
+    const history = useHistory();
+  
   return (
     <React.Fragment>
+            
         <Container fluid style={{width: "100vw", height: "100vh", backgroundColor: "#bababa", paddingTop: "35vh"}}>
             <Row>
                 <Col className="d-flex justify-content-md-center">
@@ -20,10 +24,16 @@ export default function Main() {
             </Row>
             <Row style={{marginTop: "100px"}}>
                 <Col className="d-flex justify-content-md-center">
-                    <div class="main-font" style={{width: "10%", height: "45px", lineHeight: "45px", background: "linear-gradient(96.23deg, #FA80D2 0%, #FED757 100%)", textAlign: "center"}}>Write Something.</div>
+                    <div class="main-font" type="button"
+                        style={{width: "10%", height: "45px", lineHeight: "45px", background: "linear-gradient(96.23deg, #FA80D2 0%, #FED757 100%)", textAlign: "center"}}
+                        onClick={() => history.push('/post')}>
+                        
+                        Write Something.
+                    </div>
                 </Col>
             </Row>
         </Container>
+
     </React.Fragment>
   );
 }
