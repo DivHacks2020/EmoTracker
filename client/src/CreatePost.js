@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
+
 import CheckBox from "./CheckBox";
-import './CreatePost.css';
+import Option from "./Option";
+import TagsModal from "./TagsModal";
+
+import "./CreatePost.css";
+
+import * as emojis from "./data/emojis.json";
 
 function CreatePost() {
   const [username, setUsername] = useState("Green Parrot");
@@ -20,7 +26,6 @@ function CreatePost() {
     emoji: emoji,
   });
 
-  
   const handleCheckElement = (e) => {
     let updatedTags = tags;
 
@@ -55,15 +60,16 @@ function CreatePost() {
           value={post}
           onChange={(e) => setPost(e.target.value)}
         />
-
-        <button className="add-tags-button" type="button" onClick={toggleModal}>
-          Add tags
-        </button>
+        {/* <TagsModal/> */}
 
         <ul className="tags">
           {tags.map((tag, index) => {
             return (
-              <CheckBox key = {index} handleCheckElement={handleCheckElement} {...tag} />
+              <CheckBox
+                key={index}
+                handleCheckElement={handleCheckElement}
+                {...tag}
+              />
             );
           })}
         </ul>
@@ -73,10 +79,9 @@ function CreatePost() {
           value={emoji}
           onChange={(e) => setEmoji(e.target.value)}
         >
-          <option value="happy">Happy</option>
-          <option value="joyful">Joyful</option>
-          <option value="excited">Excited</option>
-          <option value="nervous">Nervous</option>
+          {emojis.emojis.map((emoji, index) => {
+            return <Option key={index + 5} {...emoji} />;
+          })}
         </select>
         <button className="submit-button" type="submit">
           Create Post
