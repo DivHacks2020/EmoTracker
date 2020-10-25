@@ -4,6 +4,7 @@ import CreatePost from './CreatePost';
 import PosterDataDashboard from './PosterDataDashboard';
 import LocationMoodTracker from './LocationMoodTracker';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import GeolocationDemo from './GeolocationDemo';
 
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Create Post</Link>
+              <Link to="/post">Create Post</Link>
             </li>
             <li>
               <Link to="/feed">Activity Feed</Link>
@@ -25,10 +26,13 @@ export default function App() {
             <li>
               <Link to="/tracker">Location Mood Tracker</Link>
             </li>
+            <li>
+              <Link to="/geodemo">Geo Demo</Link>
+            </li>
           </ul>
         </nav>
         <Switch>
-          <Route exact path="/">
+          <Route path="/post">
             <CreatePost />
           </Route>
           <Route path="/feed">
@@ -39,6 +43,9 @@ export default function App() {
           </Route>
           <Route path="/tracker">
             <LocationMoodTracker />
+          </Route>
+          <Route path="/geodemo">
+            <GeolocationDemo />
           </Route>
         </Switch>
       </div>

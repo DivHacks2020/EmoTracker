@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@400;500;600&display=swap');
+
+.main-font{
+    font-family: 'Abril Fatface', cursive;
+}
+.secondary-font{
+    font-family: 'Lora', serif;
+}
+
+.nav-pills > .nav-item {
+    margin-left: 50px;
+    font-size: 1.2em;
+    width: 250px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.nav-pills > .nav-item > .nav-link {
+    border: 3px solid black;
+    color: black;
+}
+
+.nav-pills > .nav-item > .nav-link.active {
+    color: black;
+    background-color: #c4c4c4;
+    border: 3px solid #c4c4c4;
+}
+
+.link{
+    background-color: #c4c4c4;
+    color: black; 
+    padding: 15px; 
+    text-align: center;
+}
+
+.link:hover{
+    background-color: black;
+    color: white;
+}
+

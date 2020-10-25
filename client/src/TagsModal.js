@@ -46,12 +46,13 @@ export default function TagsModal(props) {
   };
 
   const handleClose = () => {
+    console.log(tags);
     setOpen(false);
   };
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title">Add Tags</h2>
+      <h2 className="secondary-font" id="simple-modal-title" style={{marginBottom: "20px"}}>Add Tags</h2>
       <Select
         className="select-tag"
         options={tagOptions}
@@ -60,14 +61,17 @@ export default function TagsModal(props) {
         isMulti
         isSearchable
       />
+      <button type="submit" onClick={handleClose} className="main-font" style={{margin: "20px", width: "120px", height: "50px", backgroundColor: "black", color: "white"}}>Select.</button>
     </div>
   );
 
   return (
     <div>
-      <button type="button" onClick={handleOpen}>
+      <div type="button" className="secondary-font"
+        style={{width: "15%", height: "45px", lineHeight: "45px", background: "linear-gradient(96.23deg, #FA80D2 0%, #FED757 100%)", textAlign: "center"}}
+        onClick={handleOpen}>
         Add Tags
-      </button>
+      </div>
       <Modal open={open} onClose={handleClose}>
         {body}
       </Modal>
