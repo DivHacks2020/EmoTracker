@@ -9,21 +9,21 @@ Gather data insight on the degree of emotional impact because of recent events.
 Find your story anonymously or search for a specific user for post updates.
 
 ### Initial UI Design
-[!Main Page](https://user-images.githubusercontent.com/49451794/97106257-b054c280-167d-11eb-8415-f2dfa299c6f6.png)
+![Main Page](https://user-images.githubusercontent.com/49451794/97106257-b054c280-167d-11eb-8415-f2dfa299c6f6.png)
 
-[!Create Post](https://user-images.githubusercontent.com/49451794/97070173-20365080-158b-11eb-87e5-659404ecee33.png)
+![Create Post](https://user-images.githubusercontent.com/49451794/97070173-20365080-158b-11eb-87e5-659404ecee33.png)
 
-[!Add Tags Modal](https://user-images.githubusercontent.com/49451794/97070193-54117600-158b-11eb-838a-72b44755b8f0.png)
+![Add Tags Modal](https://user-images.githubusercontent.com/49451794/97070193-54117600-158b-11eb-838a-72b44755b8f0.png)
 
-[!Activity Feed](https://user-images.githubusercontent.com/49451794/97070209-6c819080-158b-11eb-9971-45ca5ed27ada.png)
+![Activity Feed](https://user-images.githubusercontent.com/49451794/97070209-6c819080-158b-11eb-9971-45ca5ed27ada.png)
 
-[!Mood Locator](https://user-images.githubusercontent.com/49451794/97106255-af239580-167d-11eb-9041-91936b9d9b81.png)
+![Mood Locator](https://user-images.githubusercontent.com/49451794/97106255-af239580-167d-11eb-9041-91936b9d9b81.png)
 
-[!Mood Locator Respond Modal](https://user-images.githubusercontent.com/49451794/97070233-b4081c80-158b-11eb-9ea7-19c584e3ea02.png)
+![Mood Locator Respond Modal](https://user-images.githubusercontent.com/49451794/97070233-b4081c80-158b-11eb-9ea7-19c584e3ea02.png)
 
-[!Data Insight on Posts](https://user-images.githubusercontent.com/49451794/97070244-caae7380-158b-11eb-8880-b625f373e3da.png)
+![Data Insight on Posts](https://user-images.githubusercontent.com/49451794/97070244-caae7380-158b-11eb-8880-b625f373e3da.png)
 
-[!Find Post](https://user-images.githubusercontent.com/49451794/97070253-dd28ad00-158b-11eb-9d39-a28d0de406bc.png)
+![Find Post](https://user-images.githubusercontent.com/49451794/97070253-dd28ad00-158b-11eb-9d39-a28d0de406bc.png)
 
 ### Live Demo
 [EmoTracker Demo](https://emotracker-dubhacks2020.herokuapp.com/)
