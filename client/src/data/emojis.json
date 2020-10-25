@@ -1,0 +1,54 @@
+{
+  "emojis": [
+    {
+      "id": 1,
+      "value": "angry",
+      "link": "/assets/svg/angry.svg"
+    },
+    {
+      "id": 2,
+      "value": "embarrassed",
+      "link": "/assets/svg/embarrassed.svg"
+    },
+    {
+      "id": 3,
+      "value": "happy",
+      "link": "/assets/svg/happy.svg"
+    },
+    {
+      "id": 4,
+      "value": "ill",
+      "link": "/assets/svg/ill.svg"
+    },
+    {
+      "id": 5,
+      "value": "in-love",
+      "link": "/assets/svg/in-love.svg"
+    },
+    {
+      "id": 6,
+      "value": "joyful",
+      "link": "/assets/svg/joyful.svg"
+    },
+    {
+      "id": 7,
+      "value": "sad",
+      "link": "/assets/svg/sad.svg"
+    },
+    {
+      "id": 8,
+      "value": "surprised",
+      "link": "/assets/svg/surprised.svg"
+    },
+    {
+      "id": 9,
+      "value": "suspicious",
+      "link": "/assets/svg/suspicious.svg"
+    },
+    {
+      "id": 10,
+      "value": "unhappy",
+      "link": "/assets/svg/unhappy.svg"
+    }
+  ]
+}
