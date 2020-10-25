@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 
-import Option from "./Option";
+import Select, { components } from "react-select";
+
 import TagsModal from "./TagsModal";
 
 import * as emojis from "./data/emojis.json";
@@ -21,6 +22,21 @@ function CreatePost() {
     lat: location[0],
     long: location[1],
   });
+
+  const { Option } = components;
+
+  const IconOption = (props) => (
+    <Option {...props}>
+      <img
+        src={props.data.link}
+        style={{ width: 36 }}
+        alt={props.data.value}
+        className="mr-3"
+      />
+      
+      {props.data.label}
+    </Option>
+  );
 
   const history = useHistory();
 
@@ -47,7 +63,7 @@ function CreatePost() {
   const onChangeValueHandler = (values) => {
     setTags(values);
   };
-  
+
   return (
     <React.Fragment>
       <div style={{ padding: "35px" }}>
@@ -68,16 +84,12 @@ function CreatePost() {
 
           <TagsModal value={tags} onChangeValue={onChangeValueHandler} />
 
-          <select
-            className="emoji-select"
-            value={emoji}
-            onChange={(e) => setEmoji(e.target.value)}
-            style={{ marginTop: "20px", marginBottom: "20px" }}
-          >
-            {emojis.emojis.map((emoji, index) => {
-              return <Option key={index + 5} {...emoji} />;
-            })}
-          </select>
+          <Select 
+            options={emojis.emojis} 
+            components={{ Option: IconOption }}
+            onChange={(e) => setEmoji(e)}
+            className="my-3" 
+          />
           <br />
           <button
             class="main-font"
