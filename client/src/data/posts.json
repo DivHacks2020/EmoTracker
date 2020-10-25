@@ -6,8 +6,8 @@
       "latitude": 40.7127837,
       "longitude": -74.0059413,
       "state": "New York",
-      "username": "GreenParrot",
-      "post": "Lorem ipsum",
+      "username": "Green Parrot #1122",
+      "post": "The lockdown has changed a lot of things. I'm feeling at a loss of what to do. First off, my schedule had to be changed entirely and it's causing me a lot of stress to adjust.",
       "emoji": "angry",
       "tags": ["other"]
     },
@@ -17,8 +17,8 @@
       "latitude": 34.0522342,
       "longitude": -118.2436849,
       "state": "California",
-      "username": "GreenParrot",
-      "post": "Lorem ipsum",
+      "username": "Pink Flamingo #3245",
+      "post": "It's getting hard for me to sleep every day. Nowadays, just the thought of going to bed stresses me out.",
       "emoji": "embarassed",
       "tags": ["other"]
     },
@@ -28,9 +28,9 @@
       "latitude": 41.8781136,
       "longitude": -87.6297982,
       "state": "Illinois",
-      "username": "GreenParrot",
-      "post": "Lorem ipsum",
-      "emoji": "happy",
+      "username": "White Monkey #8794",
+      "post": "Recently, it's been stressful at home. I'm currently the only working parent and the loss of benefits have definitely made things harder. I don't know what to tell the kids.",
+      "emoji": "unhappy",
       "tags": ["other"]
     },
     {
@@ -39,7 +39,7 @@
       "latitude": 31,
       "longitude": -97,
       "state": "Texas",
-      "username": "GreenParrot",
+      "username": "Black Hawk #9711",
       "post": "Lorem ipsum",
       "emoji": "joyful",
       "tags": ["other"]
@@ -50,7 +50,7 @@
       "latitude": 28,
       "longitude": -94,
       "state": "Texas",
-      "username": "Red Parrot",
+      "username": "Orange Octopus #5601",
       "post": "Lorem ipsum 5",
       "emoji": "ill",
       "tags": ["other"]
@@ -61,7 +61,7 @@
       "latitude": 30,
       "longitude": -95,
       "state": "Texas",
-      "username": "Yellow Parrot",
+      "username": "Red Eagle #3478",
       "post": "Lorem ipsum 6",
       "emoji": "in-love",
       "tags": ["other"]
@@ -72,7 +72,7 @@
       "latitude": 39,
       "longitude": -76,
       "state": "New York",
-      "username": "GreenParrot",
+      "username": "Blue Giraffe #2166",
       "post": "Lorem ipsum",
       "emoji": "surprised",
       "tags": ["other"]
@@ -83,7 +83,7 @@
       "latitude": 32,
       "longitude": -116,
       "state": "California",
-      "username": "GreenParrot",
+      "username": "Yellow Whale #5699",
       "post": "Lorem ipsum",
       "emoji": "suspicious",
       "tags": ["other"]

@@ -14,10 +14,10 @@ export default function FeedMental() {
                 <ColorDiv />
             </ListGroup.Item>
             <ListGroup.Item>
-            <h4 className="main-font"><strong>Green Parrot #1122</strong></h4>
+            <h4 className="main-font"><strong>Pink Flamingo #3245</strong></h4>
             <h4 className="secondary-font"><span class="badge badge-warning">Mental Illness</span></h4>
             <p className="secondary-font">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            It's getting hard for me to sleep every day. Nowadays, just the thought of going to bed stresses me out. I would lie in bed, and even if I'm exhausted, my brain just won't shut down.
             </p>
             <div className="main-font" style={{color: "white", textAlign: "center", width: "10%", height: "45px", lineHeight: "45px", background: "linear-gradient(94.31deg, #7B81EC 0%, #61D4AC 100%)"}}>Respond.</div>
             </ListGroup.Item>

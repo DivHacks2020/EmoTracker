@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
+
 import Option from "./Option";
 import TagsModal from "./TagsModal";
 
 import "./CreatePost.css";
 
 import * as emojis from "./data/emojis.json";
+
 
 function CreatePost() {
   const [username, setUsername] = useState("Green Parrot");
@@ -23,6 +26,9 @@ function CreatePost() {
     e.preventDefault();
     console.log(formData);
   };
+
+  const history = useHistory();
+  
 
   return (
     <React.Fragment>
@@ -46,6 +52,14 @@ function CreatePost() {
             return <Option key={index + 5} {...emoji} />;
           })}
         </select>
+
+        <div class="main-font" type="button"
+                        style={{width: "10%", height: "45px", lineHeight: "45px", background: "linear-gradient(96.23deg, #FA80D2 0%, #FED757 100%)", textAlign: "center"}}
+                        onClick={() => history.push('/feed')}>
+                        
+                        Create Post.
+                    </div>  
+
         <button className="submit-button" type="submit">
           Create Post
         </button>
