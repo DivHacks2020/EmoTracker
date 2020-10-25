@@ -35,12 +35,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TagsModal(props) {
+  const {values, onChangeValue} = props
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = useState(false);
-  const [tags, setTags] = useState([]);
-
+  const [tags, setTags] = useState(props);
+  
   const handleOpen = () => {
     setOpen(true);
   };
@@ -54,8 +54,9 @@ export default function TagsModal(props) {
       <h2 className="secondary-font" id="simple-modal-title" style={{marginBottom: "20px"}}>Add Tags</h2>
       <Select
         className="select-tag"
+        value={values}
         options={tagOptions}
-        onChange={(e) => setTags(e)}
+        onChange={onChangeValue}
         autoFocus
         isMulti
         isSearchable

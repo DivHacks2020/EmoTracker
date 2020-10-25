@@ -7,10 +7,10 @@ import TagsModal from "./TagsModal";
 import * as emojis from "./data/emojis.json";
 
 function CreatePost() {
-  const [location, setLocation] = useState([39,-98]);
+  const [location, setLocation] = useState([39, -98]);
   const [username, setUsername] = useState("Green Peacock #5621");
   const [post, setPost] = useState("");
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState(["other"]);
   const [emoji, setEmoji] = useState("happy");
 
   const formData = Object.freeze({
@@ -19,19 +19,15 @@ function CreatePost() {
     tags: tags,
     emoji: emoji,
     lat: location[0],
-    long: location[1]
+    long: location[1],
   });
-
 
   const history = useHistory();
 
   const findCoordinates = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
-        setLocation([
-          position.coords.latitude,
-          position.coords.longitude,
-        ]);
+        setLocation([position.coords.latitude, position.coords.longitude]);
       },
       (error) => alert(error.message),
       { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
@@ -39,15 +35,19 @@ function CreatePost() {
   };
 
   useEffect(() => {
-    findCoordinates()
-  }, [])
+    findCoordinates();
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    history.push("/feed")
+    history.push("/feed");
   };
 
+  const onChangeValueHandler = (values) => {
+    setTags(values);
+  };
+  
   return (
     <React.Fragment>
       <div style={{ padding: "35px" }}>
@@ -66,7 +66,7 @@ function CreatePost() {
             ></textarea>
           </div>
 
-          <TagsModal />
+          <TagsModal value={tags} onChangeValue={onChangeValueHandler} />
 
           <select
             className="emoji-select"
