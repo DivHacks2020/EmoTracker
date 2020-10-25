@@ -15,7 +15,7 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Create Post</Link>
+              <Link to="/post">Create Post</Link>
             </li>
             <li>
               <Link to="/feed">Activity Feed</Link>
@@ -32,7 +32,7 @@ export default function App() {
           </ul>
         </nav>
         <Switch>
-          <Route exact path="/">
+          <Route path="/post">
             <CreatePost />
           </Route>
           <Route path="/feed">
