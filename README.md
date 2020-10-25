@@ -1,12 +1,16 @@
 ## EmoTracker
-Submission for DivHacks 2020. A platform that tracks and tells about the emotional impact of COVID-19.
+Submission for DivHacks 2020.  
+A platform that tracks and tells about the emotional impact of COVID-19.
 
 ### Basic Features
-Allow poster to talk about their situation anonymously.
-Find stories based on challenges in life.
-See the emotional state of people using a map interface and interact with local or remote communities.
-Gather data insight on the degree of emotional impact because of recent events.
-Find your story anonymously or search for a specific user for post updates.
+Allow poster to talk about their situation anonymously.  
+Find stories based on challenges in life.  
+See the emotional state of people using a map interface and interact with local or remote communities.  
+Gather data insight on the degree of emotional impact because of recent events.  
+Find your story anonymously or search for a specific user for post updates.  
+
+### Live Demo
+[EmoTracker Demo](https://emotracker-dubhacks2020.herokuapp.com/)
 
 ### Initial UI Design
 ![Main Page](https://user-images.githubusercontent.com/49451794/97106257-b054c280-167d-11eb-8415-f2dfa299c6f6.png)
@@ -25,8 +29,7 @@ Find your story anonymously or search for a specific user for post updates.
 
 ![Find Post](https://user-images.githubusercontent.com/49451794/97070253-dd28ad00-158b-11eb-9d39-a28d0de406bc.png)
 
-### Live Demo
-[EmoTracker Demo](https://emotracker-dubhacks2020.herokuapp.com/)
+
 
 
 
