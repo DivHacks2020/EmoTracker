@@ -2,11 +2,15 @@
     "tags": [
       {
         "value":"loss",
-        "label": "loss of a loved one"
+        "label": "experiencing loss"
       },
       {
         "value":"financial",
         "label": "financial difficulties"
+      },
+      {
+        "value":"mental",
+        "label": "mental illness"
       },
       {
         "value":"distress",
