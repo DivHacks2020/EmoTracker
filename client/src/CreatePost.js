@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CheckBox from "./CheckBox";
 import './CreatePost.css';
+import { useHistory } from 'react-router-dom';
 
 function CreatePost() {
   const [username, setUsername] = useState("Green Parrot");
@@ -44,6 +45,9 @@ function CreatePost() {
     console.log(formData);
   };
 
+  const history = useHistory();
+  
+
   return (
     <React.Fragment>
       <h1 className="create-post-heading">Create Post</h1>
@@ -78,6 +82,14 @@ function CreatePost() {
           <option value="excited">Excited</option>
           <option value="nervous">Nervous</option>
         </select>
+
+        <div class="main-font" type="button"
+                        style={{width: "10%", height: "45px", lineHeight: "45px", background: "linear-gradient(96.23deg, #FA80D2 0%, #FED757 100%)", textAlign: "center"}}
+                        onClick={() => history.push('/feed')}>
+                        
+                        Create Post.
+                    </div>  
+
         <button className="submit-button" type="submit">
           Create Post
         </button>

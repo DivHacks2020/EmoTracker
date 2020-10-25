@@ -14,10 +14,10 @@ export default function FeedFinancial() {
                 <ColorDiv />
             </ListGroup.Item>
             <ListGroup.Item>
-            <h4 className="main-font"><strong>Green Parrot #1122</strong></h4>
+            <h4 className="main-font"><strong>White Monkey #8794</strong></h4>
             <h4 className="secondary-font"><span class="badge badge-success">Financial Difficulties</span></h4>
             <p className="secondary-font">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            Recently, it's been stressful at home. I'm currently the only working parent and the loss of benefits have definitely made things harder. I don't know what to tell the kids.
             </p>
             <div className="main-font" style={{color: "white", textAlign: "center", width: "10%", height: "45px", lineHeight: "45px", background: "linear-gradient(94.31deg, #7B81EC 0%, #61D4AC 100%)"}}>Respond.</div>
             </ListGroup.Item>

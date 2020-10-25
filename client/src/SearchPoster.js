@@ -7,12 +7,12 @@ export default function SearchPoster() {
     const posterData = [
         {
             poster: "Green Parrot #2211",
-            post: "The lockdown has changed a lot of things. I'm feeling at a loss of what to do. First off",
+            post: "The lockdown has changed a lot of things. I'm feeling at a loss of what to do. First off, my schedule had to be changed entirely and it's causing me a lot of stress to adjust.",
             tag: "Emotional Distress"
         },
         {
             poster: "Pink Flamingo #3245",
-            post: "It's getting hard for me to sleep every day. Nowadays, just the thought of going to bed stresses me out.",
+            post: "It's getting hard for me to sleep every day. Nowadays, just the thought of going to bed stresses me out. I would lie in bed, and even if I'm exhausted, my brain just won't shut down.",
             tag: "Mental Illness"
         },
         {

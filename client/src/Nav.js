@@ -17,7 +17,7 @@ export default function Nav() {
             <Container fluid className="justify-content-start">
                 <Row>  
                 <Col>
-                    <div class="main-font" style={{backgroundColor: "black", color: "white", padding: "15px", textAlign: "center", width: "10vw"}}>Project Name.</div>
+                    <div class="main-font" style={{backgroundColor: "black", color: "white", padding: "15px", textAlign: "center", width: "10vw"}}>EmoTracker.</div>
                 </Col>
                 </Row>
                 <Row style={{marginTop: "15px"}}>
