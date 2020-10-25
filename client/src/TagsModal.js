@@ -46,7 +46,6 @@ export default function TagsModal(props) {
   };
 
   const handleClose = () => {
-    console.log(tags);
     setOpen(false);
   };
 
