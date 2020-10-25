@@ -2,52 +2,62 @@
   "emojis": [
     {
       "id": 1,
-      "value": "angry",
-      "link": "/assets/svg/angry.svg"
+      "value": "happy",
+      "label": "Happy",
+      "link": "/assets/svg/happy.svg"
     },
     {
       "id": 2,
       "value": "embarrassed",
+      "label": "Embarrassed",
       "link": "/assets/svg/embarrassed.svg"
     },
     {
       "id": 3,
-      "value": "happy",
-      "link": "/assets/svg/happy.svg"
+      "value": "angry",
+      "label": "Angry",
+      "link": "/assets/svg/angry.svg"
     },
     {
       "id": 4,
       "value": "ill",
+      "label": "Ill",
       "link": "/assets/svg/ill.svg"
     },
     {
       "id": 5,
       "value": "in-love",
+      "label": "In-love",
       "link": "/assets/svg/in-love.svg"
     },
     {
       "id": 6,
       "value": "joyful",
+      "label": "Joyful",
       "link": "/assets/svg/joyful.svg"
     },
     {
       "id": 7,
       "value": "sad",
+      "label": "Sad",
       "link": "/assets/svg/sad.svg"
     },
     {
       "id": 8,
       "value": "surprised",
+      "label": "Surprised",
       "link": "/assets/svg/surprised.svg"
     },
     {
       "id": 9,
       "value": "suspicious",
+      "label": "Suspicious",
       "link": "/assets/svg/suspicious.svg"
     },
     {
       "id": 10,
       "value": "unhappy",
+      "label": "Unhappy",
       "link": "/assets/svg/unhappy.svg"
     }
   ]
