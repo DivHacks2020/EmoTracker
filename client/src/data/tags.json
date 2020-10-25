@@ -1,0 +1,25 @@
+{
+    "tags": [
+      {
+        "value":"loss",
+        "label": "loss of a loved one"
+      },
+      {
+        "value":"financial",
+        "label": "financial difficulties"
+      },
+      {
+        "value":"distress",
+        "label": "emotional distress"
+      },
+      {
+        "value":"okay",
+        "label": "I'm okay!"
+      },
+      {
+        "value":"other",
+        "label": "other"
+      }
+    ]
+  }
+  

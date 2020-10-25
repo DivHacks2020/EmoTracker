@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import CheckBox from "./CheckBox";
-import './CreatePost.css';
+import Option from "./Option";
+import TagsModal from "./TagsModal";
+
+import "./CreatePost.css";
+
+import * as emojis from "./data/emojis.json";
 
 function CreatePost() {
   const [username, setUsername] = useState("Green Parrot");
   const [post, setPost] = useState("initial post");
-  const [tags, setTags] = useState([
-    { id: 1, value: "loss of a loved one", isChecked: false },
-    { id: 2, value: "financial difficulties", isChecked: false },
-    { id: 3, value: "emotional distress", isChecked: false },
-    { id: 4, value: "other", isChecked: false },
-  ]);
+  const [tags, setTags] = useState([]);
   const [emoji, setEmoji] = useState("happy");
 
   const formData = Object.freeze({
@@ -19,25 +18,6 @@ function CreatePost() {
     tags: tags,
     emoji: emoji,
   });
-
-  
-  const handleCheckElement = (e) => {
-    let updatedTags = tags;
-
-    updatedTags.forEach((tag) => {
-      if (tag.value === e.target.value) {
-        tag.isChecked = e.target.checked;
-      }
-    });
-    setTags(updatedTags);
-    console.log(updatedTags);
-  };
-
-  const isModalVisible = false;
-
-  const toggleModal = () => {
-    isModalVisible = !isModalVisible;
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -55,28 +35,16 @@ function CreatePost() {
           value={post}
           onChange={(e) => setPost(e.target.value)}
         />
-
-        <button className="add-tags-button" type="button" onClick={toggleModal}>
-          Add tags
-        </button>
-
-        <ul className="tags">
-          {tags.map((tag, index) => {
-            return (
-              <CheckBox key = {index} handleCheckElement={handleCheckElement} {...tag} />
-            );
-          })}
-        </ul>
+        <TagsModal/>
 
         <select
           className="emoji-select"
           value={emoji}
           onChange={(e) => setEmoji(e.target.value)}
         >
-          <option value="happy">Happy</option>
-          <option value="joyful">Joyful</option>
-          <option value="excited">Excited</option>
-          <option value="nervous">Nervous</option>
+          {emojis.emojis.map((emoji, index) => {
+            return <Option key={index + 5} {...emoji} />;
+          })}
         </select>
         <button className="submit-button" type="submit">
           Create Post
