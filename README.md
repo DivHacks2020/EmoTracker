@@ -12,6 +12,12 @@ Find your story anonymously or search for a specific user for post updates.
 ### Live Demo
 [EmoTracker Demo](https://emotracker-dubhacks2020.herokuapp.com/)
 
+**For demonstration purposes, the data displayed from the Poster Data page is not accurate nor authentic.**  
+To see valid search results, please type:  
+- In **Poster Data,** "New York", "North Carolina," or "Washington."  
+- In **Search Poster,** "Green Parrot #2211", "Pink Flamingo #3245," or "White Monkey #8794."
+
+
 ### Initial UI Design
 ![Main Page](https://user-images.githubusercontent.com/49451794/97106257-b054c280-167d-11eb-8415-f2dfa299c6f6.png)
 
